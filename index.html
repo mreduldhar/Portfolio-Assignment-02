@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      /* Montagu Slab Font */
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+      /* Manrope Font */
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white font-[Manrope]">
+    <!-- Header Section -->
+    <header class="w-full h-full">
+      <!-- Navbar -->
+      <nav
+        class="max-w-[1190px] mx-auto flex items-center justify-between px-24 py-5"
+      >
+        <h1 class="text-2xl font-extrabold md:text-3xl">Mredul</h1>
+        <!-- Menu bar for mobile version -->
+        <div class="menu-bar md:hidden">
+          <img src="./images/icons/menu-bar.png" alt="" />
+        </div>
+        <!-- Nav Menu Items -->
+        <div class="navMenu hidden md:flex items-center gap-7 text-base">
+          <div class="navLinks flex gap-7">
+            <a class="hover:text-[#f2a50c]" href="#Home">Home</a>
+            <a class="hover:text-[#f2a50c]" href="#About">About Me</a>
+            <a class="hover:text-[#f2a50c]" href="#Projects">Projects</a>
+            <a class="hover:text-[#f2a50c]" href="#Testimonials"
+              >Testimonials</a
+            >
+          </div>
+          <button
+            class="text-black font-medium bg-[#E6AA32] px-10 py-4 rounded-[52px] hover:bg-[#f2a50c]"
+          >
+            Download CV
+          </button>
+        </div>
+      </nav>
+      <!-- border after nav bar -->
+      <div class="border border-[#1C1C21]"></div>
+      <!-- Navbar End -->
+
+      <!-- Hero Section -->
+      <section
+        class="font-[Manrope] w-full mx-auto flex flex-col-reverse items-center md:flex-row md:items-end md:justify-end gap-6 py-40 pl-20"
+      >
+        <!-- Left Section -->
+        <div class="w-[90%] md:w-[50%]">
+          <h5 class="text-lg text-[#797C86]">Web Developer</h5>
+          <h1 class="font-[Montagu] text-5xl font-bold leading-snug">
+            HI! This is <br />
+            <span class="text-[#E6AA32]">Mredul kanthy Dhar</span>
+          </h1>
+          <p class="text-lg text-[#797C86] my-3">
+            As a web designer with four years of experience, I specialize in
+            creating visually appealing and user-friendly websites. My expertise
+            includes responsive design, UI/UX principles, and collaborating with
+            clients to bring their visions to life.
+          </p>
+          <div class="btns text-base flex gap-6">
+            <button
+              class="text-black font-medium bg-[#E6AA32] px-5 py-3 rounded-3xl"
+            >
+              Let's Connect
+            </button>
+            <button class="flex items-center gap-4">
+              View Portfolios
+              <img src="./images/icons/right-arrow.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <!-- Right Section -->
+        <div class="w-full md:w-1/2 flex items-end mt-5 ml-6">
+          <div
+            class="relative w-full h-72 bg-gradient-to-b from-[#17171A] via-[#17171A] to-[#17171A00] rounded-tl-[100px]"
+          ></div>
+          <div class="absolute">
+            <img
+              class="w-[60%] bottom-0 self-end"
+              src="./images/profile-2.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main Section -->
+    <main class="max-w-[1190px] mx-auto">
+      <!-- Specialties Section -->
+      <section class="w-full h-full my-8">
+        <div class="header-content text-center space-y-3">
+          <h4 class="text-lg font-semibold text-[#797C86] uppercase">
+            Specialties
+          </h4>
+          <h1 class="text-5xl font-bold uppercase">My specialities</h1>
+          <p class="text-lg text-[#797C86]">
+            As a web designer with four years of experience, I specialize in
+            creating visually appealing <br />
+            and user-friendly websites. My expertise includes responsive design.
+          </p>
+        </div>
+        <!-- Specialties Card Container -->
+        <div
+          class="specs-containers mt-16 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4"
+        >
+          <!-- Card 1 -->
+          <div
+            class="card-container h-72 px-6 py-12 rounded-sm shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <div class="icon flex justify-center">
+                <img class="w-10" src="./images/icons/frontend.png" alt="" />
+              </div>
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                Front-End Development
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="card-container h-72 px-6 py-12 rounded-sm shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <div class="icon flex justify-center">
+                <img class="w-10" src="./images/icons/backend.png" alt="" />
+              </div>
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                Back-End Development
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="card-container h-72 px-6 py-12 rounded-sm shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <div class="icon flex justify-center">
+                <img class="w-10" src="./images/icons/full-stack.png" alt="" />
+              </div>
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                Full-Stack Development
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="card-container h-72 px-6 py-12 rounded-sm shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <div class="icon flex justify-center">
+                <img
+                  class="w-10"
+                  src="./images/icons/web-security.png"
+                  alt=""
+                />
+              </div>
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                Web Application Security
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="card-container h-72 px-6 py-12 rounded-sm shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <div class="icon flex justify-center">
+                <img class="w-10" src="./images/icons/ecommerce.png" alt="" />
+              </div>
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                E-commerce Development
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="card-container h-72 px-6 py-12 rounded-sm shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <div class="icon flex justify-center">
+                <img class="w-10" src="./images/icons/cloud.png" alt="" />
+              </div>
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                Cloud-Based Development
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="card-container h-72 px-6 py-12 rounded-sm shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <div class="icon flex justify-center">
+                <img class="w-10" src="./images/icons/web-apps.png" alt="" />
+              </div>
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                Progressive Web Apps
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="card-container h-72 px-6 py-12 rounded-sm shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <div class="icon flex justify-center">
+                <img class="w-10" src="./images/icons/Brain_AI.png" alt="" />
+              </div>
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                AI-Powered Development
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Specialties Section End -->
+
+      <!-- Recent Work Section -->
+      <section class="w-full h-full my-32">
+        <div class="work-heading text-center space-y-3">
+          <h4 class="text-lg font-semibold text-[#797C86] uppercase">
+            Recent Works
+          </h4>
+          <h1 class="text-5xl font-bold uppercase">My Recent Works</h1>
+          <p class="text-lg text-[#797C86]">
+            As a web designer with four years of experience, I specialize in
+            creating visually appealing <br />
+            and user-friendly websites. My expertise includes responsive design.
+          </p>
+        </div>
+        <!-- Recent work Card Container -->
+        <div
+          class="works-container mt-16 grid grid-cols-2 gap-6 md:grid-cols-3"
+        >
+          <!-- Card 1 -->
+          <div class="work-card h-52 rounded-sm shadow-2xl drop-shadow-2xl">
+            <img
+              class="w-full h-full object-fill"
+              src="./images/recent-work/Assignment-1.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Card 2 -->
+          <div class="work-card h-52 rounded-sm shadow-2xl drop-shadow-2xl">
+            <img
+              class="w-full h-full object-fill"
+              src="./images/recent-work/practice-project.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Card 3 -->
+          <div class="work-card h-52 rounded-sm shadow-2xl drop-shadow-2xl">
+            <img
+              class="w-full h-full object-fill"
+              src="./images/recent-work/Challenge-2.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Card 4 -->
+          <div class="work-card h-52 rounded-sm shadow-2xl drop-shadow-2xl">
+            <img
+              class="w-full h-full object-fill"
+              src="./images/recent-work/practice-project.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Card 5 -->
+          <div class="work-card h-52 rounded-sm shadow-2xl drop-shadow-2xl">
+            <img
+              class="w-full h-full object-fill"
+              src="./images/recent-work/Assignment-1.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Card 6 -->
+          <div class="work-card h-52 rounded-sm shadow-2xl drop-shadow-2xl">
+            <img
+              class="w-full h-full object-fill"
+              src="./images/recent-work/practice-project.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Recent Work Section End -->
+
+      <!-- Service Section -->
+      <section id="service" class="mx-auto w-full h-full my-32">
+        <div class="s-header-content text-center space-y-3">
+          <h4 class="text-lg font-semibold text-[#797C86] uppercase">
+            Service
+          </h4>
+          <h1 class="text-5xl font-bold uppercase">My other services</h1>
+          <p class="text-lg text-[#797C86]">
+            As a web designer with four years of experience, I specialize in
+            creating visually appealing <br />
+            and user-friendly websites. My expertise includes responsive design.
+          </p>
+        </div>
+        <!-- Service Card Container -->
+        <div
+          class="service-container mt-16 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4"
+        >
+          <!-- Card 1 -->
+          <div
+            class="card-container border border-[#1C1C21] h-52 px-6 py-12 rounded-lg shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                Front-End Development
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="card-container border border-[#1C1C21] h-52 px-6 py-12 rounded-lg shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                E-Commerce Development
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="card-container border border-[#1C1C21] h-52 px-6 py-12 rounded-lg shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                Web App Development
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="card-container border border-[#1C1C21] h-52 px-6 py-12 rounded-lg shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                API Dev. & Integration
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="card-container border border-[#1C1C21] h-52 px-6 py-12 rounded-lg shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                Cloud-Based Solutions
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="card-container border border-[#1C1C21] h-52 px-6 py-12 rounded-lg shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                Web Perform. Optimization
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="card-container border border-[#1C1C21] h-52 px-6 py-12 rounded-lg shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                (SEO) Services
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="card-container border border-[#1C1C21] h-52 px-6 py-12 rounded-lg shadow-2xl drop-shadow-2xl bg-gradient-to-bl from-[#0E0E10] to-[#17171A3B]"
+          >
+            <div class="content w-full h-full text-center space-y-4">
+              <h1 class="text-lg font-bold text-[#E6E6E6] whitespace-nowrap">
+                Website Maint. & Support
+              </h1>
+              <p class="text-sm text-[#E6E6E682]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service Section End -->
+
+      <!-- FAQ Section -->
+      <section class="my-32">
+        <div class="faq's">
+          <h5 class="text-[20px] text-[#797C86] font-semibold uppercase">
+            Faq's
+          </h5>
+          <h1 class="text-5xl font-semibold">Frequently Asked Questions</h1>
+        </div>
+        <!-- border start-->
+        <div class="border border-[#1C1C21] mt-12"></div>
+        <!-- border end -->
+
+        <!-- accordion start -->
+        <div id="accordion">
+          <!-- content -->
+          <div
+            class="accordion-content flex items-center justify-between px-12 py-7 mt-3"
+          >
+            <div class="question-ans space-y-3">
+              <h3 class="text-[20px] font-semibold text-[#AFB0B6]">
+                What areas of web development do you focus on?
+              </h3>
+              <p class="text-lg text-[#797C86]">
+                I specialize in web development, creating websites that deliver
+                unique user experiences.
+              </p>
+            </div>
+            <div class="acc-btn border border-[#1C1C21] rounded-full">
+              <img class="p-2" src="./images/icons/up-arrow.png" alt="" />
+            </div>
+          </div>
+          <!-- content end-->
+          <!-- border -->
+          <div class="border border-[#1C1C21] my-5"></div>
+          <!-- border end -->
+
+          <!-- content -->
+          <div
+            class="accordion-content flex items-center justify-between px-12 py-7"
+          >
+            <div class="question-ans space-y-3">
+              <h3 class="text-[20px] font-semibold text-[#AFB0B6]">
+                How can I schedule a web development consultation with you?
+              </h3>
+            </div>
+            <div class="acc-btn border border-[#1C1C21] rounded-full">
+              <img class="p-2" src="./images/icons/down-arrow.png" alt="" />
+            </div>
+          </div>
+          <!-- content end-->
+          <!-- border -->
+          <div class="border border-[#1C1C21] my-5"></div>
+          <!-- border end -->
+
+          <!-- content -->
+          <div
+            class="accordion-content flex items-center justify-between px-12 py-7"
+          >
+            <div class="question-ans space-y-3">
+              <h3 class="text-[20px] font-semibold text-[#AFB0B6]">
+                Can I choose a specific platform for my website?
+              </h3>
+            </div>
+            <div class="acc-btn border border-[#1C1C21] rounded-full">
+              <img class="p-2" src="./images/icons/down-arrow.png" alt="" />
+            </div>
+          </div>
+          <!-- content end-->
+          <!-- border -->
+          <div class="border border-[#1C1C21] my-5"></div>
+          <!-- border end -->
+
+          <!-- content -->
+          <div
+            class="accordion-content flex items-center justify-between px-12 py-7"
+          >
+            <div class="question-ans space-y-3">
+              <h3 class="text-[20px] font-semibold text-[#AFB0B6]">
+                What tools and technologies do you use for web development?
+              </h3>
+            </div>
+            <div class="acc-btn border border-[#1C1C21] rounded-full">
+              <img class="p-2" src="./images/icons/down-arrow.png" alt="" />
+            </div>
+          </div>
+          <!-- content end-->
+          <!-- border -->
+          <div class="border border-[#1C1C21] my-5"></div>
+          <!-- border end -->
+
+          <!-- content -->
+          <div
+            class="accordion-content flex items-center justify-between px-12 py-7"
+          >
+            <div class="question-ans space-y-3">
+              <h3 class="text-[20px] font-semibold text-[#AFB0B6]">
+                Can I choose a specific platform for my website?
+              </h3>
+            </div>
+            <div class="acc-btn border border-[#1C1C21] rounded-full">
+              <img class="p-2" src="./images/icons/down-arrow.png" alt="" />
+            </div>
+          </div>
+          <!-- content end-->
+        </div>
+        <!-- accordion end -->
+      </section>
+      <!-- FAQ Section End -->
+    </main>
+    <!-- Main Section End -->
+
+    <!-- FOoter Section Start -->
+    <footer class="w-full">
+      <!-- footer top border  -->
+      <div class="border border-[#1C1C21]"></div>
+
+      <div
+        class="footer-content max-w-[1190px] mx-auto flex justify-around py-20"
+      >
+        <div class="col-1 text-lg uppercase">
+          <h4 class="text-[#797C86] font-semibold mb-6">Solutions</h4>
+          <div class="text-[#F2F2F3] font-medium flex flex-col gap-4">
+            <a href="#">Glintopia</a>
+            <a href="#">Fluxway</a>
+            <a href="#">Fable’s</a>
+            <a href="#">PowerCore</a>
+          </div>
+        </div>
+        <div class="col-2 text-lg uppercase">
+          <h4 class="text-[#797C86] font-semibold mb-6">Customers</h4>
+          <div class="text-[#F2F2F3] font-medium flex flex-col gap-4">
+            <a href="#">Glintopia</a>
+            <a href="#">Fluxway</a>
+            <a href="#">Fable’s</a>
+            <a href="#">PowerCore</a>
+          </div>
+        </div>
+        <div class="col-3 text-lg uppercase">
+          <h4 class="text-[#797C86] font-semibold mb-6">Partners</h4>
+          <div class="text-[#F2F2F3] font-medium flex flex-col gap-4">
+            <a href="#">Glintopia</a>
+            <a href="#">Fluxway</a>
+            <a href="#">Fable’s</a>
+            <a href="#">PowerCore</a>
+          </div>
+        </div>
+        <div class="col-4 text-lg uppercase">
+          <h4 class="text-[#797C86] font-semibold mb-6">Stakeholders</h4>
+          <div class="text-[#F2F2F3] font-medium flex flex-col gap-4">
+            <a href="#">Glintopia</a>
+            <a href="#">Fluxway</a>
+            <a href="#">Fable’s</a>
+            <a href="#">PowerCore</a>
+          </div>
+        </div>
+        <div class="col-5 text-lg uppercase">
+          <h4 class="text-[#797C86] font-semibold mb-6">Offerings</h4>
+          <div class="text-[#F2F2F3] font-medium flex flex-col gap-4">
+            <a href="#">Visions</a>
+            <a href="#">Gatherings</a>
+            <a href="#">BizSphere</a>
+          </div>
+        </div>
+      </div>
+      <!-- footer bottom border  -->
+      <div class="border border-[#1C1C21]"></div>
+      <!-- footer bottom content -->
+      <div
+        class="max-w-[1190px] mx-auto text-lg text-[#797C86] flex justify-between py-10"
+      >
+        <div class="space-x-5">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+          <span>© 2024 All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+    <!-- FOoter Section End -->
+  </body>
+</html>
